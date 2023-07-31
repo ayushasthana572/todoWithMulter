@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Task List...</h1>
+        
+    </div>
+        <!-- todo list item -->
+        <div class="file-list">
+            <ul class="todo-items">
+
+
+            </ul>
+        </div>
+        <div class="form">
+        <form action="/todo-new" method="post" enctype="multipart/form-data" class="todo-form">
+            <input type="text" name="todoInput" class="todoInput" placeholder="I need to..." required autocomplete="off"><br>
+            <input type="file" name="pic" class="pic" required><br>
+            <input type="submit" class="add-button" value="Submit"></button>
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
